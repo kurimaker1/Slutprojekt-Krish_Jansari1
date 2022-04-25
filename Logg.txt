@@ -1,3 +1,14 @@
 ﻿Slutprojekt Krish_Jansari1: Breakout-Game
 
 2022-04-25: Uppstart och anslutning till GitHub.
+			Vad vill jag göra?
+			Jag vill bygga spelet 'Breakout' som skapades av Atari (1976) och var baserat på som
+			var ett av de första digitala-spelen någonsin skapade. Spelet innebär att en kula ska studsa mellan
+			2 olika objekt, paneler (som är stationära och försvinner vid kollision med kulan), och en plattform
+			(som är kontrollbar i x-led men inte kan förstöras.) Meningen med spelet är ett lyckas få kulan att
+			kollidera med alla paneler utan av nudda marken under plattformen. Varje kollidering med en plattform
+			ger poäng, och vid maximum poäng, har alltså då alla paneler förstörts och då har man vunnit. Spelet
+			spelas av en person åt taget (Single-Player). Spelet kommer ha 3 fönster: Start (där man startar spelet)
+			, Spelet (där man spelar), End (där man ser om man vann eller ej och får möjligheten att spela igen).
+			Jag kommer att använda mig av kunskaperna jag fått av Programmering 1 hittils, samt Internetet för de delar
+			jag inte kan lösa på egen hand.
