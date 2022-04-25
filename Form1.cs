@@ -12,6 +12,7 @@ namespace Slutprojekt_Krish_Jansari1
 {
     public partial class Form1 : Form
     {
+        //Author: Krish Jansari
         public Form1()
         {
             InitializeComponent();
