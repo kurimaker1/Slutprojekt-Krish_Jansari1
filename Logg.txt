@@ -12,3 +12,7 @@
 			, Spelet (där man spelar), End (där man ser om man vann eller ej och får möjligheten att spela igen).
 			Jag kommer att använda mig av kunskaperna jag fått av Programmering 1 hittils, samt Internetet för de delar
 			jag inte kan lösa på egen hand.
+
+2022-04-29: Början av UI
+			Eftersom att spelet ska ha 3 fönster (Start - Game - End) måste jag lyckas göra att användaren kan gå
+			från ett fönster till nästa så smidigt som möjligt utan att ha flera fönster öppna samtidigt.

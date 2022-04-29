@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace Slutprojekt_Krish_Jansari1
 {
-    public partial class Form1 : Form
+    public partial class game : Form
     {
-        //Author: Krish Jansari
-        public Form1()
+        public game()
         {
             InitializeComponent();
-        }
-
-        private void start_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            game gl = new game();
-            gl.ShowDialog();
-            this.Close();
         }
     }
 }
