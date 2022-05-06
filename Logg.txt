@@ -16,3 +16,6 @@
 2022-04-29: Början av UI
 			Eftersom att spelet ska ha 3 fönster (Start - Game - End) måste jag lyckas göra att användaren kan gå
 			från ett fönster till nästa så smidigt som möjligt utan att ha flera fönster öppna samtidigt.
+
+2022-05-06: Början av spelet
+			Jag har skapat spel UI:n samt key funktioner.
