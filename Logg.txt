@@ -19,3 +19,9 @@
 
 2022-05-06: Början av spelet
 			Jag har skapat spel UI:n samt key funktioner.
+
+2022-05-09: Början av spelfunktionen
+			Nu har jag skapat timer. Första steget är att skapa någon typ av gravitation i bollen så att den kan gå 
+			diagonalt (upp och ner - höger till vänster). För bollen-kolledering funktionen utgår jag från en annan typ av breakoutspels-tutorial.
+			För mer exakta funktions beskrivning kan du kolla på koden, jag har grön text bredvid funktionerna under timer1_Tick sektionen.
+			

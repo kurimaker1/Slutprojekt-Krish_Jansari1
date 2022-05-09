@@ -30,7 +30,6 @@ namespace Slutprojekt_Krish_Jansari1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label label1;
             this.pictura = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -79,10 +78,10 @@ namespace Slutprojekt_Krish_Jansari1
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
             this.pictureBox46 = new System.Windows.Forms.PictureBox();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
-            this.platform = new System.Windows.Forms.PictureBox();
             this.boll = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            label1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.platform = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -131,21 +130,9 @@ namespace Slutprojekt_Krish_Jansari1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.platform)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boll)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platform)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = System.Drawing.Color.Black;
-            label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label1.ForeColor = System.Drawing.Color.White;
-            label1.Location = new System.Drawing.Point(17, 9);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(45, 19);
-            label1.TabIndex = 50;
-            label1.Text = "score";
             // 
             // pictura
             // 
@@ -675,20 +662,10 @@ namespace Slutprojekt_Krish_Jansari1
             this.pictureBox47.TabStop = false;
             this.pictureBox47.Tag = "box";
             // 
-            // platform
-            // 
-            this.platform.BackColor = System.Drawing.Color.White;
-            this.platform.Location = new System.Drawing.Point(304, 524);
-            this.platform.Name = "platform";
-            this.platform.Size = new System.Drawing.Size(175, 25);
-            this.platform.TabIndex = 48;
-            this.platform.TabStop = false;
-            this.platform.Tag = "Platform";
-            // 
             // boll
             // 
             this.boll.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.boll.Location = new System.Drawing.Point(381, 374);
+            this.boll.Location = new System.Drawing.Point(208, 287);
             this.boll.Name = "boll";
             this.boll.Size = new System.Drawing.Size(25, 25);
             this.boll.TabIndex = 49;
@@ -698,6 +675,27 @@ namespace Slutprojekt_Krish_Jansari1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 20;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(17, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 19);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "label1";
+            // 
+            // platform
+            // 
+            this.platform.BackColor = System.Drawing.Color.White;
+            this.platform.Location = new System.Drawing.Point(304, 524);
+            this.platform.Name = "platform";
+            this.platform.Size = new System.Drawing.Size(175, 23);
+            this.platform.TabIndex = 52;
+            this.platform.TabStop = false;
             // 
             // game
             // 
@@ -705,9 +703,9 @@ namespace Slutprojekt_Krish_Jansari1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(label1);
-            this.Controls.Add(this.boll);
             this.Controls.Add(this.platform);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.boll);
             this.Controls.Add(this.pictureBox42);
             this.Controls.Add(this.pictureBox43);
             this.Controls.Add(this.pictureBox44);
@@ -808,8 +806,8 @@ namespace Slutprojekt_Krish_Jansari1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.platform)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boll)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platform)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -865,9 +863,9 @@ namespace Slutprojekt_Krish_Jansari1
         private System.Windows.Forms.PictureBox pictureBox45;
         private System.Windows.Forms.PictureBox pictureBox46;
         private System.Windows.Forms.PictureBox pictureBox47;
-        private System.Windows.Forms.PictureBox platform;
         private System.Windows.Forms.PictureBox boll;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox platform;
     }
 }

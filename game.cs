@@ -31,7 +31,7 @@ namespace Slutprojekt_Krish_Jansari1
             {
                 vänster = true;
             }
-            if (e.KeyCode == Keys.Right && platform.Right + platform.Width < 796)
+            if (e.KeyCode == Keys.Right && platform.Left + platform.Width < 796)
             {
                 höger = true;
             }
@@ -45,12 +45,72 @@ namespace Slutprojekt_Krish_Jansari1
             }
             if (e.KeyCode == Keys.Right)
             {
-                vänster = false;
+                höger = false;
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
+            boll.Left += bx;
+            boll.Top += by;
+
+            label1.Text = "Score: " + score;
+
+            if (vänster)
+            {
+                platform.Left -= v; //för att gå vänster
+            }
+            if (höger)
+            {
+                platform.Left += v; //för att gå höger
+            }
+            if (platform.Left < 1)
+            {
+                vänster = false; //stoppar platformen från att lämna skärmen på vänster sida
+            }
+            else if (platform.Left + platform.Width > 796)
+            {
+                höger = false; //stoppar på höger sida
+            }
+
+            // delen nedan har jag DELVIS tagit från ett pong-spel. Läs mer i logg.txt 2022-05-09
+
+            if (boll.Left + boll.Width > ClientSize.Width || boll.Left < 0)
+            {
+                bx = -bx; //gör att bollen studsar på väggar (sidan)
+            }
+            if (boll.Top < 0 || boll.Bounds.IntersectsWith(platform.Bounds))
+            {
+                by = -by; //gör att bollen studsar på tak
+            }
+            if (boll.Top + boll.Height > ClientSize.Height)
+            {
+                gameOver();
+            }
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox && x.Tag == "box")
+                {
+                    if (boll.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        this.Controls.Remove(x);
+                        by = -by;
+                        score++;
+                    }
+                }
+            }
+            if (score > 47)
+            {
+                gameOver();
+            }
+
+
+        }
+
+        private void gameOver()
+        {
+            timer1.Stop();
         }
     }
 }
