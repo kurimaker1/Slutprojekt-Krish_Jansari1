@@ -86,7 +86,7 @@ namespace Slutprojekt_Krish_Jansari1
             }
             if (boll.Top + boll.Height > ClientSize.Height)
             {
-                gameOver();
+                gameLose();
             }
             foreach (Control x in this.Controls)
             {
@@ -102,15 +102,28 @@ namespace Slutprojekt_Krish_Jansari1
             }
             if (score > 47)
             {
-                gameOver();
+                gameWin();
             }
 
 
         }
 
-        private void gameOver()
+        private void gameLose()
         {
             timer1.Stop();
+            this.Hide();
+            lose ls = new lose();
+            ls.ShowDialog();
+            this.Close();
+        }
+
+        private void gameWin()
+        {
+            timer1.Stop();
+            this.Hide();
+            win wn = new win();
+            wn.ShowDialog();
+            this.Close();
         }
     }
 }

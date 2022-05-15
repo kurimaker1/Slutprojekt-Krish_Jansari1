@@ -24,4 +24,10 @@
 			Nu har jag skapat timer. Första steget är att skapa någon typ av gravitation i bollen så att den kan gå 
 			diagonalt (upp och ner - höger till vänster). För bollen-kolledering funktionen utgår jag från en annan typ av breakoutspels-tutorial.
 			För mer exakta funktions beskrivning kan du kolla på koden, jag har grön text bredvid funktionerna under timer1_Tick sektionen.
-			
+			En del av min kod är överkurs och den delen fick jag online.
+
+2022-05-15: Fler fönster
+			Jag har skapat 2 mer fönster, ett ifall du vinner, och ett ifall du förlorar. Båda fönster ser exakt likadana ut
+			med en skillnad - texten (label).
+
+			Jag är nu klar.
