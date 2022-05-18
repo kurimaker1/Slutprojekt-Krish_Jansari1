@@ -12,6 +12,7 @@ namespace Slutprojekt_Krish_Jansari1
 {
     public partial class win : Form
     {
+
         public win()
         {
             InitializeComponent();
@@ -21,6 +22,7 @@ namespace Slutprojekt_Krish_Jansari1
         {
             this.Hide();
             game gl = new game();
+            label1.Text = "Congratulation You Won!";
             gl.ShowDialog();
             this.Close();
         }

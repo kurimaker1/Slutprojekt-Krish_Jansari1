@@ -32,6 +32,8 @@ namespace Slutprojekt_Krish_Jansari1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.start = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pname = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // start
@@ -41,7 +43,7 @@ namespace Slutprojekt_Krish_Jansari1
             this.start.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.start.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.start.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.start.Location = new System.Drawing.Point(121, 206);
+            this.start.Location = new System.Drawing.Point(118, 263);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(144, 56);
             this.start.TabIndex = 0;
@@ -61,12 +63,31 @@ namespace Slutprojekt_Krish_Jansari1
             this.label1.TabIndex = 1;
             this.label1.Text = "BREAKOUT";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(118, 199);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "NAME";
+            // 
+            // pname
+            // 
+            this.pname.Location = new System.Drawing.Point(118, 218);
+            this.pname.Name = "pname";
+            this.pname.Size = new System.Drawing.Size(100, 23);
+            this.pname.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(384, 361);
+            this.Controls.Add(this.pname);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.start);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -81,6 +102,8 @@ namespace Slutprojekt_Krish_Jansari1
 
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox pname;
     }
 }
 

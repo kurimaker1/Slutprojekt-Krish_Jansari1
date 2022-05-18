@@ -12,9 +12,11 @@ namespace Slutprojekt_Krish_Jansari1
 {
     public partial class lose : Form
     {
+
         public lose()
         {
             InitializeComponent();
+            label1.Text = "You Lose, Suck it";
         }
 
         private void reset_Click(object sender, EventArgs e)

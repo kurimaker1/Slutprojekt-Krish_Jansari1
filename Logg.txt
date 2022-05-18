@@ -30,4 +30,7 @@
 			Jag har skapat 2 mer fönster, ett ifall du vinner, och ett ifall du förlorar. Båda fönster ser exakt likadana ut
 			med en skillnad - texten (label).
 
-			Jag är nu klar.
+
+2022-05-18: KOMPLETTERING
+			Lade till spelare-namn funktion där man skriver sitt USERNAME i första formen, sen är det displayed i SPEL-formen.
+			Ökade svårighetsgraden på spelet både så att det går fortare, men också så att det blir svårare.

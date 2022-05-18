@@ -37,13 +37,14 @@ namespace Slutprojekt_Krish_Jansari1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 84);
+            this.label1.Location = new System.Drawing.Point(85, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 39);
+            this.label1.Size = new System.Drawing.Size(210, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Congratulation, You Won!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // exit
             // 

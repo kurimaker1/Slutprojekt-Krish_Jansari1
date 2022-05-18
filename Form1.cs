@@ -22,6 +22,7 @@ namespace Slutprojekt_Krish_Jansari1
         {
             this.Hide();
             game gl = new game();
+            gl.playername = pname.Text;
             gl.ShowDialog();
             this.Close();
         }
