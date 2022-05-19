@@ -31,6 +31,10 @@
 			med en skillnad - texten (label).
 
 
-2022-05-18: KOMPLETTERING
+2022-05-18: KOMPLETTERING 1
 			Lade till spelare-namn funktion där man skriver sitt USERNAME i första formen, sen är det displayed i SPEL-formen.
 			Ökade svårighetsgraden på spelet både så att det går fortare, men också så att det blir svårare.
+
+2022-05-19: KOMPLETTERING 2
+			Lade till 2 bollar för att balancera spelet
+			Sänkt svårighetsgraden efter att ha höjt den i 'KOMPLETTERING 1', platformens hastighet ökar fortfarande, inte bollarnas dock.

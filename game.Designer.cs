@@ -83,6 +83,8 @@ namespace Slutprojekt_Krish_Jansari1
             this.label1 = new System.Windows.Forms.Label();
             this.platform = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.boll2 = new System.Windows.Forms.PictureBox();
+            this.boll3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -133,6 +135,8 @@ namespace Slutprojekt_Krish_Jansari1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boll)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boll2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boll3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictura
@@ -671,6 +675,7 @@ namespace Slutprojekt_Krish_Jansari1
             this.boll.Size = new System.Drawing.Size(25, 25);
             this.boll.TabIndex = 49;
             this.boll.TabStop = false;
+            this.boll.Tag = "multiball";
             // 
             // timer1
             // 
@@ -711,12 +716,38 @@ namespace Slutprojekt_Krish_Jansari1
             this.label2.Text = "label2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // boll2
+            // 
+            this.boll2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.boll2.Enabled = false;
+            this.boll2.Location = new System.Drawing.Point(509, 287);
+            this.boll2.Name = "boll2";
+            this.boll2.Size = new System.Drawing.Size(25, 25);
+            this.boll2.TabIndex = 54;
+            this.boll2.TabStop = false;
+            this.boll2.Tag = "multiball";
+            this.boll2.Visible = false;
+            // 
+            // boll3
+            // 
+            this.boll3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.boll3.Enabled = false;
+            this.boll3.Location = new System.Drawing.Point(366, 287);
+            this.boll3.Name = "boll3";
+            this.boll3.Size = new System.Drawing.Size(25, 25);
+            this.boll3.TabIndex = 55;
+            this.boll3.TabStop = false;
+            this.boll3.Tag = "multiball";
+            this.boll3.Visible = false;
+            // 
             // game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.boll3);
+            this.Controls.Add(this.boll2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.platform);
             this.Controls.Add(this.label1);
@@ -824,6 +855,8 @@ namespace Slutprojekt_Krish_Jansari1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boll)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boll2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boll3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -884,5 +917,7 @@ namespace Slutprojekt_Krish_Jansari1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox platform;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox boll2;
+        private System.Windows.Forms.PictureBox boll3;
     }
 }
