@@ -38,3 +38,6 @@
 2022-05-19: KOMPLETTERING 2
 			Lade till 2 bollar för att balancera spelet
 			Sänkt svårighetsgraden efter att ha höjt den i 'KOMPLETTERING 1', platformens hastighet ökar fortfarande, inte bollarnas dock.
+
+2022-05-24 KOMPLETTERING 3
+			Lade till leaderboard.

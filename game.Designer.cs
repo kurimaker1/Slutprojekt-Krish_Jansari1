@@ -85,6 +85,7 @@ namespace Slutprojekt_Krish_Jansari1
             this.label2 = new System.Windows.Forms.Label();
             this.boll2 = new System.Windows.Forms.PictureBox();
             this.boll3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -740,12 +741,25 @@ namespace Slutprojekt_Krish_Jansari1
             this.boll3.Tag = "multiball";
             this.boll3.Visible = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(278, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 19);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "label3";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.boll3);
             this.Controls.Add(this.boll2);
             this.Controls.Add(this.label2);
@@ -919,5 +933,6 @@ namespace Slutprojekt_Krish_Jansari1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox boll2;
         private System.Windows.Forms.PictureBox boll3;
+        private System.Windows.Forms.Label label3;
     }
 }

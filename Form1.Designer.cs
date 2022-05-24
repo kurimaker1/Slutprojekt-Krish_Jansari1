@@ -29,11 +29,17 @@ namespace Slutprojekt_Krish_Jansari1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.start = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pname = new System.Windows.Forms.TextBox();
+            this.refresh = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // start
@@ -80,12 +86,60 @@ namespace Slutprojekt_Krish_Jansari1
             this.pname.Size = new System.Drawing.Size(100, 23);
             this.pname.TabIndex = 3;
             // 
+            // refresh
+            // 
+            this.refresh.Location = new System.Drawing.Point(314, 218);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(75, 23);
+            this.refresh.TabIndex = 5;
+            this.refresh.Text = "refresh";
+            this.refresh.UseVisualStyleBackColor = true;
+            this.refresh.Click += new System.EventHandler(this.refresh_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(419, 97);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(182, 222);
+            this.textBox1.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(120, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(414, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 19);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Recently Played";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(384, 361);
+            this.ClientSize = new System.Drawing.Size(752, 361);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.refresh);
             this.Controls.Add(this.pname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -93,6 +147,7 @@ namespace Slutprojekt_Krish_Jansari1
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "BREAKOUT";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,6 +159,11 @@ namespace Slutprojekt_Krish_Jansari1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox pname;
+        private System.Windows.Forms.Button refresh;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

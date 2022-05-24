@@ -15,7 +15,7 @@ namespace Slutprojekt_Krish_Jansari1
         bool höger;
         bool vänster;
         int v = 10;
-        int score = 0;
+       public int score = 0;
         int bx = 5;
         int by = 5;
         int bx2 = 5;
@@ -70,15 +70,8 @@ namespace Slutprojekt_Krish_Jansari1
         {
             boll.Left += bx;
             boll.Top += by;
-            /*
-            boll2.Enabled = false;
-            boll2.Visible = false;
-
-            boll3.Enabled = false;
-            boll3.Visible = false;
-            */
-            label1.Text = "Score: " + score + "   Platformfart: " + v + "   Bollfart: " + bx + " " + by;
-
+            label1.Text = "Platformfart: " + v + "   Bollfart: " + bx + " " + by + "Score: ";
+            label3.Text = score.ToString();
             if (vänster)
             {
                 platform.Left -= v; //för att gå vänster
@@ -120,11 +113,15 @@ namespace Slutprojekt_Krish_Jansari1
             {
                 by3 = -by3;
             }
-
-            if (boll.Top + boll.Height > ClientSize.Height && boll2.Top + boll2.Height > ClientSize.Height && boll3.Top + boll3.Height > ClientSize.Height)
+            if (score <= 8)
+            {
+                if (boll.Top + boll.Height > ClientSize.Height)
                 {
-                    gameLose();
+                    //gameLose();
+                    gameWin();
                 }
+            }
+
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && x.Tag == "box")
@@ -167,6 +164,11 @@ namespace Slutprojekt_Krish_Jansari1
                 boll2.Top += by2;
                 boll2.Enabled = true;
                 boll2.Visible = true;
+                if (boll.Top + boll.Height > ClientSize.Height && boll2.Top + boll2.Height > ClientSize.Height)
+                {
+                    //gameLose();
+                    gameWin();
+                }
             }
             if (score > 16)
             {
@@ -174,6 +176,12 @@ namespace Slutprojekt_Krish_Jansari1
                 boll3.Top += by3;
                 boll3.Enabled = true;
                 boll3.Visible = true;
+                if (boll.Top + boll.Height > ClientSize.Height && boll2.Top + boll2.Height > ClientSize.Height && boll3.Top + boll3.Height > ClientSize.Height)
+                {
+                    //gameLose();
+                    gameWin();
+
+                }
             }
             if (score > 47)
             {
@@ -186,18 +194,22 @@ namespace Slutprojekt_Krish_Jansari1
         private void gameLose()
         {
             timer1.Stop();
-            this.Hide();
-            lose ls = new lose();
-            ls.ShowDialog();
+            //this.Hide();
+            //lose ls = new lose();
+            //ls.ShowDialog();
             this.Close();
         }
 
         private void gameWin()
         {
             timer1.Stop();
-            this.Hide();
-            win wn = new win();
-            wn.ShowDialog();
+            //this.Hide();
+            //win wn = new win();
+            //wn.ShowDialog();
+            this.Close();
+            //Form1 f1 = new Form1();
+            //f1.playerscore = int.Parse(label3.Text);
+            //f1.ShowDialog();
             this.Close();
         }
 
